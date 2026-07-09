@@ -78,7 +78,7 @@ export default {
     const cleanRequest = new Request(cleanUrl, request);
 
     return (
-      MotionMCPAgent.mount("/mcp") as { fetch: (req: Request, env: Env, ctx: ExecutionContext) => Promise<Response> }
+            MotionMCPAgent.serve("/mcp") as { fetch: (req: Request, env: Env, ctx: ExecutionContext) => Promise<Response> }
     ).fetch(cleanRequest, env, ctx);
   },
 };
