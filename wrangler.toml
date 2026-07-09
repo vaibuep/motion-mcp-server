@@ -18,3 +18,7 @@ MOTION_MCP_TOOLS = "essential"
 # Secrets set via wrangler:
 #   npx wrangler secret put MOTION_API_KEY
 #   npx wrangler secret put MOTION_MCP_SECRET
+
+[[kv_namespaces]]
+binding = "OAUTH_KV"
+id = "9c5b3315156c4f20af667f5e3767bfde"
