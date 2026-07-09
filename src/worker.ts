@@ -37,8 +37,7 @@ export class MotionMCPAgent extends McpAgent<Env> {
                 registry
               );
         const enabledTools = configurator.getEnabledTools();
-        validator.initializeValidators(enabledTools);
-
+        
       for (const tool of enabledTools) {
               const zodShape = jsonSchemaToZodShape(tool.inputSchema as Parameters<typeof jsonSchemaToZodShape>[0]);
 
